@@ -1,3 +1,6 @@
 export {default as shad} from "./bg-pattern-mobile.svg"
 export {default as logoImg} from "./illustration-woman-online-mobile.svg"
 export {default as arrowDown} from "./icon-arrow-down.svg"
+export {default as shadDesk} from "./bg-pattern-desktop.svg"
+export {default as logoDesk} from "./illustration-woman-online-desktop.svg"
+export {default as box} from "./illustration-box-desktop.svg"

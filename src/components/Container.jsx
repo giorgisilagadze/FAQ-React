@@ -1,6 +1,6 @@
 import { StyledContainer } from "../styled/Container.Styled";
-import { shad, logoImg, arrowDown } from "../images/images";
-import { Shadow, Logo, Title } from "../styled/Container.Styled";
+import { shad, logoImg, box } from "../images/images";
+import { Shadow, Logo, Box } from "../styled/Container.Styled";
 import QA from "./QA";
 
 export default function Container() {
@@ -8,7 +8,7 @@ export default function Container() {
     <StyledContainer>
       <Shadow src={shad} />
       <Logo src={logoImg} />
-      <Title>FAQ</Title>
+      <Box src={box} />
       <QA />
     </StyledContainer>
   );

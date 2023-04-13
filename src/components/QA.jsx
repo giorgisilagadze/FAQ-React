@@ -1,4 +1,12 @@
-import { Quest, QuestDiv, Arrow, Answer } from "../styled/Container.Styled";
+import {
+  Quest,
+  QuestDiv,
+  Arrow,
+  Answer,
+  MainDiv,
+  Hr,
+  Title,
+} from "../styled/Container.Styled";
 import { arrowDown } from "../images/images";
 import { useState } from "react";
 
@@ -34,7 +42,8 @@ export default function QA() {
   const [isActiveCard, setisActiveCard] = useState(null);
 
   return (
-    <div>
+    <MainDiv>
+      <Title>FAQ</Title>
       {QAS.map((item, index) => (
         <div>
           <QuestDiv
@@ -58,9 +67,9 @@ export default function QA() {
             />
           </QuestDiv>
           {isActiveCard === index ? <Answer>{item.answer}</Answer> : null}
-          <hr />
+          <Hr />
         </div>
       ))}
-    </div>
+    </MainDiv>
   );
 }
